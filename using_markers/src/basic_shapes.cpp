@@ -64,7 +64,7 @@ int main( int argc, char** argv )
       ros::Duration(5.0).sleep();  
     }
     else{
-      // ROS_INFO("Publish marker then go to sleep forever");
+      // Change marker position to dropoff position
       marker.pose.position.x = 1;
       marker.pose.position.y = 1;
       marker.action = visualization_msgs::Marker::ADD;
