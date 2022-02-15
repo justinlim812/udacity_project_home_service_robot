@@ -24,8 +24,10 @@ int main(int argc, char** argv){
   goal.target_pose.header.stamp = ros::Time::now();
 
   // Define a position and orientation for the robot to reach
-  goal.target_pose.pose.position.x = 1.0;
-  goal.target_pose.pose.orientation.w = 1.0;
+  goal.target_pose.pose.position.x = 5.707;
+  goal.target_pose.pose.position.y = -0.434;
+  goal.target_pose.pose.orientation.z = -0.698;
+  goal.target_pose.pose.orientation.w = 0.715;
 
    // Send the goal position and orientation for the robot to reach
   ROS_INFO("Sending goal");
@@ -43,8 +45,12 @@ int main(int argc, char** argv){
   ros::Duration(5.0).sleep();
 
   ROS_INFO("Moving to 2nd goal");
-  goal.target_pose.pose.position.x = 2.0;
-  goal.target_pose.pose.orientation.w = 2.0;
+  // goal.target_pose.header.frame_id = "map";
+  // goal.target_pose.header.stamp = ros::Time::now();
+  goal.target_pose.pose.position.x = 3.620;
+  goal.target_pose.pose.position.y = 8.105;
+  goal.target_pose.pose.orientation.z = 0.712;
+  goal.target_pose.pose.orientation.w = 0.701;
   ROS_INFO("Sending goal");
   ac.sendGoal(goal);
   ac.waitForResult();
