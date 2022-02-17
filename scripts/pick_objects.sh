@@ -7,5 +7,4 @@ terminator  -e  " roslaunch turtlebot_gazebo amcl_demo.launch map_file:=/home/ro
 sleep 5
 terminator  -e  " roslaunch turtlebot_rviz_launchers view_navigation_with_marker.launch" &
 sleep 5
-terminator  -e  " rosrun pick_objects pick_objects" &
-terminator  -e  " rosrun add_markers add_markers" &
+terminator  -e  " rosrun pick_objects pick_objects"
