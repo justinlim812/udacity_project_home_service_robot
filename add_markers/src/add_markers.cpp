@@ -22,7 +22,7 @@ bool is_difference_small(double x2, double x1)
 
 int main( int argc, char** argv )
 {
-  ros::init(argc, argv, "basic_shapes");
+  ros::init(argc, argv, "add_markers");
   ros::NodeHandle n;
   ros::Publisher marker_pub = n.advertise<visualization_msgs::Marker>("visualization_marker", 1, true);
   ros::Subscriber odom_sub = n.subscribe("amcl_pose", 1000, odomCallback);  
