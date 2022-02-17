@@ -9,7 +9,7 @@ void odomCallback(geometry_msgs::PoseWithCovarianceStamped amcl_pose){
     robot.pose = amcl_pose.pose;
 }
 
-double threshold = 0.01;
+double threshold = 0.25;
 bool is_difference_small(double x2, double x1)
 {
   if (abs(x2 - x1) <= threshold){
