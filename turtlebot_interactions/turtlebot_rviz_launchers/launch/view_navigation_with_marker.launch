@@ -2,5 +2,5 @@
   Used for visualising the turtlebot while building a map or navigating with the ros navistack.
  -->
 <launch>
-  <node name="rviz" pkg="rviz" type="rviz" args="-d /home/robond/catkin_ws/src/udacity_project_home_service_robot/rvizConfig/navigation_with_marker.rviz"/>
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find turtlebot_rviz_launchers)/rviz/navigation_with_marker.rviz"/>
 </launch>
