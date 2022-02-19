@@ -30,6 +30,7 @@ The scripts open terminals in Terminator, please install Terminator before runni
 $ sudo apt-get install terminator
 ```
 ## Running the Scripts
+#### There are a total of 5 scripts to demo 5 different testings.
 1. **`launch.sh`**  
 To launch Gazebo and Rviz without any configuration.  
 2. **`test_slam.sh`**  
